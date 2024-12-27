@@ -1,0 +1,1 @@
+{"version":3,"sources":["../scss/font-styles.scss","../scss/_resets.scss","main.css","../scss/main.scss","../scss/variables.scss"],"names":[],"mappings":"AAAQ,gHAAA;ACAR;EACI,sBAAA;EACA,SAAA;EACA,UAAA;ACEJ;;ACGA;EACI,oCAAA;EACA,WCRS;AFQb;;ACSY;EACI,qBAAA;EACA,cClBE;AFYlB;ACaQ;EACI,0BAAA;EACA,gBAAA;EACA,eAAA;ADXZ;ACcQ;EACI,gBAAA;EACA,eAAA;ADZZ","file":"main.css"}

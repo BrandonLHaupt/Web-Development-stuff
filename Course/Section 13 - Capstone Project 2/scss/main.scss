@@ -1,0 +1,40 @@
+@import "./variables";
+@import "./font-styles";
+@import "./resets";
+
+@function weight($weight-name){
+    @return map-get($font-weights, $weight-name);
+}
+
+body {
+    background-image: url(../img/bg.jpg);
+    color: $text-color;
+}
+
+header {
+
+    
+
+    nav {
+        ul {
+            li {
+                text-decoration: none;
+                color: $secondary-color;
+            }
+            
+        }
+    }
+
+    section {
+        h1 {
+            font-style: "Inter", Serif;
+            font-weight: weight(bold);
+            font-size: 6rem;
+        }
+
+        h2 {
+            font-weight: weight(light);
+            font-size: 3rem;
+        }
+    }
+}
