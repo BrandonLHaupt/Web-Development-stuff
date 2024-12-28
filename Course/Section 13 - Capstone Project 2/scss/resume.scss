@@ -1,0 +1,104 @@
+@import "./variables";
+@import "./font-styles";
+@import "./resets";
+@import "./mixins";
+@import "./main";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8rem;
+    height: 100vh;
+
+
+    .inner-container {
+    display: grid;
+    grid-auto-rows: min-content;
+    grid-template-columns: repeat(2, minmax(40px, 1fr));
+    height: min-content;
+    gap: 20px;
+    width: 100%;
+
+
+    .experience {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        background-color: #8f57ef;
+        grid-column: auto / span 2;
+        border-radius: 30px;
+        width: 100%;
+        padding: 40px;
+
+        h2 {
+            font-size: 2rem;
+            font-weight: weight(bold);
+        }
+
+        .job1 {
+           
+        
+            h3 {
+                font-size: 1.5rem;
+                font-weight: weight(regular);
+            }
+
+            ul {
+                li{
+                    list-style-type: none;
+                }
+            }
+        }
+    }
+
+    .education {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        background-color: #57a3ef;
+        border-radius: 30px;
+        width: 100%;
+        padding: 40px;
+
+        h2 {
+            font-size: 2rem;
+            font-weight: weight(bold);
+        }
+
+
+        .edu-list {
+            h3 {
+                font-size: 1.5rem;
+                font-weight: weight(regular);
+            }
+        }
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        background-color: #57a3ef;
+        border-radius: 30px;
+        width: 100%;
+        padding: 40px;
+
+        h2 {
+            font-size: 2rem;
+            font-weight: weight(bold);
+        }
+        .skill-list {
+           ul li {
+            list-style-type: none;
+           }
+        }
+    }
+    
+    }
+}
+
+
+
+
