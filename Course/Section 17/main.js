@@ -56,37 +56,3 @@ if (dice1 > dice2) {
     player1.style.color = '#ccac4e'
 }
 
-// switch (diceNum) {
-//     case 1:
-//         img[0].src = "./images/dice1.png"
-//         console.log(diceNum)
-//         break;
-
-//     case 2:
-//         img[0].src = "./images/dice2.png"
-//         console.log("your roll was " + diceNum)
-//         break;
-    
-//     case 3:
-//         img[0].src = "./images/dice3.png"
-//         break;
-
-//     case 4:
-//         img[0].src = "./images/dice4.png"
-//         break;
-
-//     case 5:
-//         img[0].src = "./images/dice5.png" 
-//         break;
-
-//     case 6:
-//         img[0].setAttribute("src", "./images/dice6.png")
-//         img[1].setAttribute("src", "./images/dice6.png")
-//         break;
-    
-//     default:
-//         break;
-// }
-
-
-// choosingDice()
