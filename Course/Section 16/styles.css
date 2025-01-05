@@ -1,0 +1,11 @@
+.bg-Color {
+    background-color: purple;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    padding: 10px;
+}
+
+.huge {
+    font-size: 10rem;
+}
