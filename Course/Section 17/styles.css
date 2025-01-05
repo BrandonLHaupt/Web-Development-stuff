@@ -7,7 +7,7 @@
 .dice {
   text-align: center;
   display: inline-block;
-
+  padding: 1rem;
 }
 
 body {
@@ -24,8 +24,16 @@ h1 {
 
 p {
   font-size: 2rem;
-  color: #4ECCA3;
+  color: white;
   font-family: 'Indie Flower', cursive;
+}
+
+.playerWin {
+  color: #4ECCA3;
+}
+
+.playerLose {
+  color: #bf2424;
 }
 
 img {
