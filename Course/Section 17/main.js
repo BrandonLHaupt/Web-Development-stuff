@@ -6,6 +6,7 @@ let dice2 = dice[Math.floor(Math.random() * dice.length)]
 let player1 = document.getElementsByClassName("dice")[0].firstElementChild
 let player2 = document.getElementsByClassName("dice")[1].firstElementChild
 // console.log(player1, player2)
+let title = document.getElementById("title")
 
 console.log(dice1, dice2)
 
@@ -43,11 +44,14 @@ if (dice2 == 1) {
 
 if (dice1 > dice2) {
     player1.style.color = '#4ECCA3'
+    title.innerHTML = "Player 1 Wins!"
     console.log("Player 1 Wins!")
 } else if(dice2 > dice1) {
     player2.style.color = '#4ECCA3'
+    title.innerHTML = "Player 2 Wins!"
     console.log("Player 2 Wins!")
 } else {
+    title.innerHTML = "Draw"
     player2.style.color = '#ccac4e'
     player1.style.color = '#ccac4e'
 }
