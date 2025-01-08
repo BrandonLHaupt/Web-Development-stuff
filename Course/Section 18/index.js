@@ -4,8 +4,8 @@ for (let i = 0; i < drums.length; i++) {
     document.querySelectorAll(".drum")[i].addEventListener("click", function() {
 
         let letter = this.innerHTML
-
         makeSound(letter)
+        buttonAnimation(letter)
         
     })
 }
@@ -14,14 +14,20 @@ for (let i = 0; i < drums.length; i++) {
 // Detecting Keyboard Press
 document.addEventListener("keydown", (event) => {  
     makeSound(event.key)
+    buttonAnimation(event.key)
 })
 
 
 function makeSound(key){
+
+    //goes through all the cases and if there are certain keys pressed it will play the sound
     switch (key) {
         case "w":
+            //adds in the audio
             let tom1 = new Audio('./sounds/tom-1.mp3')
+            //plays the audio
             tom1.play()
+            // makes sure the correct button is pressed
             console.log("W was pressed")
             break;
         
@@ -67,4 +73,14 @@ function makeSound(key){
     }
 }
 
+function buttonAnimation(currentKey){
+   let activeButton = document.querySelector("." + currentKey)
 
+   //adds a class of "pressed"  to the active button
+   activeButton.classList.add("pressed")
+
+   // A function that will remove the "pressed" class from the active button
+   setTimeout(function(){
+    activeButton.classList.remove("pressed")
+   }, 100)
+}
