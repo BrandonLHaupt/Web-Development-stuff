@@ -12,7 +12,13 @@
 //! this does exactly the same thing as the above
 $("button");
 
-
 //! can add mutliple classes by adding a space after each class name
-$("h1").addClass("big-title margin-50")
+$("h1").addClass("big-title margin-50");
 // $("h1").removeClass("big-title")
+
+//! can change text of the h1
+$("h1").text("Goodbye");
+//! this will change the text of the button to <em>Heyy</em> instead of italicizing it
+$("button").text("<em>Heyy</em>");
+//! this changes the inner text of the button and italicizes it
+// $("button").html("<em>Heyy</em>");
