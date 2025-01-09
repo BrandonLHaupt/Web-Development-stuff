@@ -1,8 +1,16 @@
-
 /* ! Different type of comments */
 /* * Different type of comments */
 /* ? Different type of comments */
 /* TODO Different type of comments */
 /*  Different type of comments */
-body {
+
+
+.big-title {
+    font-size: 10rem;
+    font-family: cursive,sans;
+    color: green;
+}
+
+.margin-50 {
+    margin: 50px;
 }
